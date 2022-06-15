@@ -7,13 +7,20 @@ HTTP/2 improved on HTTP/1.1 in a number of ways that allowed for speedier conten
 
 
 
+HTTP / 1.1
 
-                            HTTP / 1.1                                                                HTTP / 2
-the usest works on the textual format.	                                  It works on the binary protocol.
-There is head of line blocking that blocks all the requests behind        It allows multiplexing so one TCP connection is required for multiple requests.
-it until it doesn’t get its all resources.	
-It uses requests resource Inlining for use getting multiple pages	        It uses PUSH frame by server that collects all multiple pages
-It compresses data by itself.	                                            It uses HPACK for data compression.
+the usest works on the textual format.
+There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+It uses requests resource Inlining for use getting multiple pages
+It compresses data by itself.
+
+
+HTTP / 2 
+
+It works on the binary protocol.
+It allows multiplexing so one TCP connection is required for multiple requests.
+It uses PUSH frame by server that collects all multiple pages
+It uses HPACK for data compression.
 
 
 MAIN ADVANTAGE OF HTTP /2 OVER HTTP / 1.1 
